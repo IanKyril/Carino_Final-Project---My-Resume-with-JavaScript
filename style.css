@@ -1,0 +1,257 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+.img-hashtags {
+    animation: bounce 1s infinite;
+}
+
+/* Section for Home */
+#main-picture{
+    width:20%;
+    border-radius: 60%;
+    position: relative;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border: 2px solid #000;
+    margin-top: 30px;
+}
+.greeting-heading {
+    font-family: 'Times New Roman',serif, monospace;;
+    font-size: 60px; 
+    background: #233831; 
+    border-radius: 10%;
+    border-color: #fff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: blue;
+}
+
+/* PNG for section divider */
+.page-break img {
+    width: 100px; 
+    height: auto; 
+    max-width: 100%;
+}
+/* Section for containers for each resume section */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-window {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+    text-align: center;
+    z-index: 0;
+}
+
+.resume-window:hover {
+    transform: scale(1.05);
+}
+
+
+/* Design for general elements */
+img{
+    width:30px
+}
+h1{
+    font-family:'Times New Roman',serif, monospace;
+    font-size: 50px; 
+    text-align: center;
+    background: #233831; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: white;
+}
+
+/* Section for my social link accounts  */
+.socials-image{
+    width: 50px;
+}
+
+.highlight-on-hover {
+    transition: filter 0.3s; 
+}
+
+.highlight-on-hover:hover {
+    filter: brightness(1.3);
+    transform: scale(1.1);
+}
+
+/* Section for my navigation menu at the top left*/
+.scroll-buttons-container {
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 2;
+}
+
+.scroll-buttons {
+    position: fixed;
+    top: 10px;
+    right: 10px; 
+    font-family:'Times New Roman',serif, monospace;
+    color:white;
+    font-size: 20px;
+}
+
+.scroll-buttons a {
+    text-decoration: none;
+    display: inline-block; 
+    margin-right: 10px; 
+    color: white;
+}
+
+.scroll-buttons a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+/* Section for the scroll-up button */
+
+#scrollUpBtn {
+    position: fixed;
+    bottom: 300px;
+    right: 300px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    z-index: 999;
+}
+
+#scrollUpBtn img {
+    width: 50px; 
+    height: auto;
+}
+
+#scrollUpBtn:hover img {
+    filter: brightness(1.2); 
+}
+
+/* Section for ABOUT */
+
+.hobby-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    perspective: 1000px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.box:hover {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #f0f0f0;
+}
+
+#image-hobby {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+.p-hobby {
+    text-align: center justify;
+    font-size: 1.2em;
+    color: #333;
+}
+.inner-div {
+    margin-right: 20px; 
+    padding: 10px; 
+}
+
+/* Section for My Skills flip pages showing my progress with languages currently learning*/
+
+.skill-bar {
+    background-color: #3498db;
+    border: 1px solid #000; /* Set the border color to black */
+    color: #fff;
+    text-align: right;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Section for my contact elements */
+
+.contact-form-container {
+    width: 650px;
+    padding: 20px;
+    border-radius: 10px; 
+    border: 2px solid blue; 
+    background-color: black;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-submit-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-submit-btn:hover {
+    background-color: #217dbb;
+}
+
+
+/* Section for my handling multiple devices */
+
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
